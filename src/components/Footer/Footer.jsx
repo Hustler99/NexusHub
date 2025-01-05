@@ -8,9 +8,9 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-left">
             <div className="footer-logo">
-              <span className="nexus">Nexus</span><span className="hub">Hub</span>
+              <span className="nexus">Agarly</span><span className="hub"></span>
             </div>
-            <p>© 2023 NexusHub. All rights reserved.</p>
+            <p>© 2025 Agarly All rights reserved.</p>
             <div className="payment-icons">
               <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard" />

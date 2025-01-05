@@ -27,7 +27,7 @@ async function addProduct(productId){
   let data = await cartCounter.addToCart(productId)
   console.log(data.data.status)
   if(data.data.status==='success'){
-    toast.dark("Product Added To Cart.",{
+    toast.dark("Item Added To Cart.",{
 
     })
     cartCounter.setCounter(data.data.numOfCartItems)
@@ -60,7 +60,7 @@ async function addProduct(productId){
                 <p>  <i className="fa-solid fa-star" style={{color:"gold"}}></i>  {proudct.ratingsAverage} / 5.0 </p>
                 <span className="badge clr1  my-3 ">{proudct?.category.name}</span>
                 <span className="badge clr2 my-3 ms-3">{proudct.ratingsAverage > 3?"Best Seller" :"Highly Recommended"}</span>
-                <h2 className='my-4' >${proudct.price} <span className='text-decoration-line-through ms-2  clr'> $00.00</span> </h2>
+                <h2 className='my-4' >EGP {proudct.price/10} <span className=' ms-2  clr'>Per day</span> </h2>
                 <p className='desc' >{proudct.description}</p>
                 <div className='container-fluid x mb-3 my-4 '></div>
                 <button  onClick={()=>{addProduct(proudct._id) }} className='btn loc  w-100 mb-3 mt-2' > Add to Cart  <i className="fa-solid fa-cart-plus"></i> </button>

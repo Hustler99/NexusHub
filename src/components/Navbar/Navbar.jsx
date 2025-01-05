@@ -36,7 +36,7 @@ export default function Navbar() {
     <Fragment>
       <nav className="navbar navbar-expand-lg ">
         <div className="container">
-          <a className="navbar-brand mrgBtm" href="#">Nexus<span>Hub</span></a>
+          <a className="navbar-brand mrgBtm" href="#">Agarly</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <div className="d-flex  align-items-center justify-content-evenly  px-3 ">
                 <div className="cartNum ">
                 <NavLink to="cart"  className=" position-relative"> 
-      <i className='fa-brands fa-opencart fa-2xl ' style={{color:"black"}}></i>
+      <i className='fa-brands fa-opencart fa-2xl ' style={{color:"#001E41"}}></i>
     { <span className="position-absolute tra top-0 start-100 translate-middle badge rounded-pill bg-dark"> 
     {cartCounter.counter}
     <span className="visually-hidden">unread messages</span>
@@ -60,7 +60,7 @@ export default function Navbar() {
                 <div className='LogoutBtn ms-5 '>
                   <Link onClick={()=>{
                     signOut()
-                  }} className='btn btn-dark' to="/signin">Logout</Link>
+                  }} className='btn btn-dark Logout-Btn' to="/signin">Logout</Link>
                 </div>
               </div>
             </div>

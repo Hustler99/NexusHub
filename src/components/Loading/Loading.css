@@ -3,7 +3,7 @@
     font-weight: bold;
     font-family: monospace;
     font-size: 30px;
-    background-color: #ee701d;
+    background-color:#001E41   ;
     animation: l21 2s infinite linear;
   }
   .loader::before {

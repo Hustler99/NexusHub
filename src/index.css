@@ -56,7 +56,7 @@ code {
   
 }
 .navbar-brand{
-  color: #ee701d !important;
+  color: #001E41  !important;
   font-weight: 600;
   font-size: 32px;
   font-weight: bold;
@@ -70,15 +70,13 @@ code {
   color: black !important;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-  color: #ee701d !important;
+  color: #C2A688 !important;
 }
 .x{
   border-top: 1px solid #D8DBDF;
   width: 95%;
 }
-.slick-dots li.slick-active button:before {
-  color: #ee701d !important;
- }
+
  .local {
   right : 15px;
   top: 20px;
@@ -94,7 +92,7 @@ code {
 
 .btnAuth{
   color: white !important;
-  background-color: rgb(0, 0, 0) !important;
+  background-color: #001E41 !important;
   padding: 10px 40px !important;
   transition:  all 1s;
 }
@@ -115,7 +113,7 @@ transform: scale(1.1,1.1);
 .father h2 {
   font-size: 80px;
   z-index: 999;
-  color: #ee701d;
+  color: #001E41 ;
 }
 .child{
   position: absolute;
@@ -124,7 +122,7 @@ transform: scale(1.1,1.1);
   color: rgba(0, 0, 0, 0.096);
 }
 ::selection{
-  color: #ee701d;
+  color: #C2A688;
   background-color: black;
 }
 footer {
@@ -151,7 +149,8 @@ footer {
 }
 
 .nexus {
-  color: #ee701d;
+  color: #001E41
+  ;
 }
 
 .hub {
@@ -218,7 +217,8 @@ footer {
   color: white;
 }
 .nex-auth{
-  color: #ee701d;
+  color: #001E41
+  ;
   font-weight: bold;
 }
 .hub-auth{
@@ -236,13 +236,14 @@ footer {
   color: #88888871 !important;
 }
 .btnForm{
-  background-color: #ee701d;
+  background-color: #001E41
+  ;
   color: white;
   transition: all 1s;
 }
 .btnForm:hover{
-  color:#ee701d;
-  background-color: black;
+  color:#001E41;
+  background-color: rgb(116, 116, 116);
 }
 .form-control:focus {
   outline: 0;
@@ -258,7 +259,7 @@ Link {
   text-decoration: none !important;
 }
 .org {
-  color: #ee701d !important;
+  color: #001E41 !important;
 }
 .clr {
   color: #666666 !important;
@@ -273,13 +274,13 @@ Link {
   font-weight: 400;
 }
 .loc{
-  border: 2px solid #ee701d;
-  color: #ee701d;
+  border: 2px solid #001E41;
+  color: #C2A688;
   transition: all 300ms;
 }
 .loc:hover{
-  background-color: black;
-  color: #ee701d;
+  background-color: #C2A688;
+  color: #001E41;
 }
 .clr1{
   background-color: #fff0e7;
@@ -292,11 +293,11 @@ Link {
   padding: 15px 20px;
 }
 .Toastify__toast-theme--dark {
-  background-color: #000000 !important;
-  color: #ee701d !important;
+  background-color: #001E41 !important;
+  color: #C2A688 !important;
 }
 .Toastify__progress-bar-theme--dark {
-  background-color: #ee701d !important;
+  background-color: #ffffff !important;
 }
 .btnLoc {
   border: 1px solid black;
@@ -337,4 +338,9 @@ Link {
 
 .right-panel {
   min-width: 120px;
+}
+.Logout-Btn {
+  color: white !important;
+  background-color: #001E41 !important;
+  transition:  all 1s;
 }

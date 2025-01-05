@@ -54,7 +54,6 @@ export default function Signup() {
 
   return (
     <>
-      <h3 className='text-center nex-auth mb-3'>Nexus<span className='hub-auth'>Hub</span></h3>
       <div className="container main-panel mb-4 mobview w-25">
         <h4 className='mt-3 mb-3'>Sign Up</h4>
         <div className='container-fluid x mb-3'></div>

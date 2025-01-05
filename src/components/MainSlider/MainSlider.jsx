@@ -13,7 +13,7 @@ export default function MainSlider() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "#ee701d", height:"30px", width:"30px", padding:"5px", marginRight:"25px", color:"white" }}
+        style={{ ...style, display: "block", background: "#C2A688", height:"30px", width:"30px", padding:"5px", marginRight:"25px", color:"white" }}
         onClick={onClick}
       />
     );
@@ -24,7 +24,7 @@ export default function MainSlider() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "#ee701d", height:"30px", width:"30px", padding:"5px", marginLeft:"25px", zIndex:"99", color:"white" }}
+        style={{ ...style, display: "block", background: "#C2A688", height:"30px", width:"30px", padding:"5px", marginLeft:"25px", zIndex:"99", color:"white" }}
         onClick={onClick}
       />
     );

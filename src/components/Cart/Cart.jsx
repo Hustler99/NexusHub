@@ -29,7 +29,7 @@ export default function Cart() {
     if(data.data.status=="success"){
       setData(data.data)
       setCounter(data.data.numOfCartItems)
-      toast.success("Product deleted successfully");
+      toast.success("Item deleted successfully");
     }
   }
   async function updatePrdQty(id,count){
@@ -37,7 +37,7 @@ export default function Cart() {
     if(data.data.status=="success"){
       setData(data.data)
       setCounter(data.data.numOfCartItems)
-      toast.success("Product QTY Updated Successfully")
+      toast.success("Item days Updated Successfully")
     }
   }
   if (!data || loading) {
@@ -53,7 +53,12 @@ export default function Cart() {
   <i className="fa-solid fa-angle-left org"></i>
   <Link className='' to="/cart" style={{ textDecoration: "none", color: "inherit" }}> Cart </Link>
 </p>
-<h4 className='lead text-center fw-bold'>Total Price:  $ {data.data.totalCartPrice}</h4>
+      <h4 className='lead text-center fw-bold'>Sub Total:  EGP {data.data.totalCartPrice / 10}</h4>
+      <h6 className='lead text-center fw-bold'>
+  The total payment including the 10% commission is: EGP {(data.data.totalCartPrice * 1.1/10).toFixed(2)} 
+  (Commission: EGP {(data.data.totalCartPrice * 0.1/10).toFixed(2)}).
+</h6>
+
 {data.data.products.map((product) => (
   <div key={product._id} className="container mb-3 main-panel d-flex flex-wrap justify-content-between align-items-center">
     <div className="left-panel d-flex flex-wrap align-items-center">
@@ -65,7 +70,7 @@ export default function Cart() {
       <div className="right-content mt-3">
         <h5>{product.product.title.split(" ").slice(0, 2).join(" ")}</h5>
         <span className="badge clr1 mb-2">{product.product.category.name}</span>
-        <p>${product.price}</p>
+        <p> EGP {product.price/10}</p>
       </div>
     </div>
     <div className="right-panel ms-5 d-flex flex-column align-items-center">
@@ -83,7 +88,9 @@ export default function Cart() {
          updatePrdQty(product.product.id, product.count +1)
 
         }} className='btnControl'>+</button>
+        
       </div>
+      <p className='lead fs-6 pt-3'>Number of Day(s).</p>
     </div>
   </div>
       ))}

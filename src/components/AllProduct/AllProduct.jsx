@@ -38,7 +38,7 @@ async function addProduct(productId){
             <p>{props.data.title.split(" ").slice(0, 2).join(" ")}</p>
           </div>
           <div className='d-flex justify-content-between'>
-            <h5 className='me-2'>{props.data.price} EGP</h5>
+            <h5 className='me-2'>{props.data.price/10} EGP / Per Day</h5>
             <p><i className="fa-solid fa-star" style={{ color: "gold" }}></i> {props.data.ratingsAverage}</p>
           </div>
         </div>
